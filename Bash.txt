@@ -1,0 +1,4 @@
+mysqldump -u root -p your_db > backup.sql
+mysqldump -u root -p your_db table_name > backup_table.sql
+pg_dump -U postgres -d your_db -F c -f backup.pgsql
+pg_dump -U postgres -d your_db -t table_name -F c -f backup_table.pgsql
